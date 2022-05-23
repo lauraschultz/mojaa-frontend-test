@@ -68,6 +68,7 @@ const List: NextPage<ListProps> = ({
 			</div>
 			{toDos.map((toDo) => (
 				<ToDoItem
+					key={toDo.key}
 					categories={categories}
 					toDo={toDo}
 					onDelete={() => onDeleteToDo(toDo.key)}
